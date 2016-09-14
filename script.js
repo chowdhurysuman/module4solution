@@ -1,4 +1,4 @@
-(function (window) {
+(function () {
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -16,6 +16,25 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
            helloSpeaker.speak(names[i]);
        }
    }
-window.names = names;
 
-})(window);
+
+})();
+
+(function () {
+	var helloSpeaker = {};
+	var speakWord1 = "Hello";
+	helloSpeaker.speak = function(name) {
+    console.log(speakWord1 + " " +names[i]);
+    }
+  
+  })();
+  
+(function () {
+   var byeSpeaker = {};
+   var speakWord2 = "Good Bye";
+   byeSpeaker.speak = function (name) {
+   console.log(speakWord2 + " " +names[i]);
+   }
+
+ })();
+
